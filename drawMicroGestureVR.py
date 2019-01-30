@@ -15,6 +15,7 @@ for m in range(0,100):
 fig = plt.figure()
 ax = fig.add_subplot(111, projection='3d')
 ax.plot(M,G,S_VR)
+ax.set_title("MicroExpression vs Gesture in VR")
 ax.set_xlabel("MicroExpression")
 ax.set_ylabel("Gesture")
 ax.set_zlabel("Virtural Reality")

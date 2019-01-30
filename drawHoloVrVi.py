@@ -17,9 +17,10 @@ for M in range(0,100):
 fig = plt.figure()
 ax = fig.add_subplot(111, projection='3d')
 # ax.plot(EHolo, EVr, EVi, '-b')
+ax.set_title("EHolo vs EVr vs EVi")
 ax.plot(EHolo, EVr, EVi)
-ax.set_xlabel("EHolo")
-ax.set_ylabel("EVr")
-ax.set_zlabel("EVi")
+ax.set_xlabel("X=EHolo")
+ax.set_ylabel("Y=EVr")
+ax.set_zlabel("Z=EVi")
 
 plt.show()
