@@ -15,7 +15,7 @@ for m in range(0,100):
 fig = plt.figure()
 ax = fig.add_subplot(111, projection='3d')
 ax.plot(M,G,S_VI)
-ax.set_title("Graph 4: MicroExpression vs Gesture in Video Conferencing")
+ax.set_title("Graph 6: MicroExpression vs Gesture in Video Conferencing")
 ax.set_xlabel("X=MicroExpression")
 ax.set_ylabel("Y=Gesture")
 ax.set_zlabel("Z=Video Conferencing")
