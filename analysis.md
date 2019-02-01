@@ -42,6 +42,19 @@ The variable ``` M ``` indeed has a slope of 2, indicating its higher impact tha
 
 ## Numerical Analysis
 
+### Statistical Approach
+![anova stat](./figures/anova.png) <br>
+``` F > F crit ```, therefore, we reject the null hypothesis, this means that the three populations(Skype, Hologram, VR) are not all equal, at least one of the means is different. However, anova does not tell you which one, therefore further T-test is conducted <br>
+
+![t test 1](./figures/skype_vs_hologram_stat.png) <br>
+```(t Stat < -t Critical two-tail or t Stat > t Critical two-tail) == False```, therefore, we do not reject the null hypothesis. This means that the observed difference between sample means is not convincing enough to say that there is a significant difference between Skype and Hologram. <br>
+![t test 2](./figures/hologram_vs_vr_stat.png) <br>
+```(t Stat < -t Critical two-tail or t Stat > t Critical two-tail) == True ``` We accept the null hypothesis and conclude that there is indeed a significant difference VR and Hologram in terms of average user experience in this experiment
+![t test 3](./figures/skype_vs_vr_stat.png) <br>
+```(t Stat < -t Critical two-tail or t Stat > t Critical two-tail) == True ``` We accept the null hypothesis and conclude that there is indeed a significant difference between VR and Skype in terms of average user experience in this experiment<br>
+
+
+
 ### Variable relationship
 #### Relationship between variables <br>
 <b>Input: </b>
@@ -106,10 +119,9 @@ Vi =~ 11.32 <br>
 This result demonstrated a few interesting points:  
 1. Microexpression and Gesture have impact magnitude larger than that of any settings, implying that Microexpression and Gesture is more important than any impacts given by the different settings
 2. Microexpression has the biggest impact overall, regardless of the medium the experiement was conducted over.
-3. Hologram has the most negative impact overall
-4. Video conferencing is the only setting that has positive impact on user experience
-5. Headpose has negative, however comparatively low, effect on user experience
-6. Virtual Reality setting has negative, however comparatively low, effect on user experience
+3. Video conferencing is the only setting that has positive impact on user experience
+4. Headpose has negative, however comparatively low, effect on user experience
+5. Virtual Reality setting has negative, however comparatively low, effect on user experience
 
 
 Conclusion for future developers:
